@@ -5,7 +5,6 @@ P = 2*(a + b)
 print("S =", S)
 print("P =", P)
 
-
 d = float(input('Диаметр d:')) 
 π = 3.14
 L = π*d 
