@@ -37,3 +37,34 @@ for i in range(N-2):
     a.append(sum(a))
 print(a)
 
+#Дан массив A размера N. Вывести его элементы в следующем порядке: A1, AN , A2, AN−1, A3, AN−2
+import random
+a = []
+print("Введите размер массива (N):")
+N = int(input())
+x = 0
+for i in range(N):
+    a.append(random.randint(0, 10))
+print("Исходный массив равняется:", a)
+for i in range(N):
+    print(a[x])
+    print(a[N-1-x])
+    x += 1 
+#Дан массив A размера N. Вывести вначале его элементы с нечетными номерами в порядке возрастания номеров,
+#а затем — элементы с четными номерами в порядке убывания номеров
+import random
+a = []
+print("Введите размер массива (N):")
+N = int(input())
+x = 0
+for i in range(N):
+    a.append(random.randint(0, 10))
+print("Исходный массив равняется:", a)
+for i in range(N):
+    if i % 2 == 0:
+        print(a[i], end=' ')
+print('')
+for i in range(N):
+    if i % 2 == 1:
+        print(a[N-1-x], end=' ')
+        x += 2 
